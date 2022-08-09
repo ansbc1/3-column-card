@@ -1,0 +1,96 @@
+:root{
+  --brightOrange: hsl(31,77%,52%);
+  --darkCyan: hsl(184,100%,22%);
+  --veryDarkCyan: hsl(179,100%,13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: "lexend deca", sans-serif;
+font-size: 15px;
+margin: auto;
+
+}
+
+h4 {
+    font-family: "Big shoulder display", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+img {
+    margin-top: 25px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    height: 80vh;
+    justify-content: center;
+    width: 65%;
+    margin-left: 20%;
+       
+}
+
+.btn {
+    border-radius: 20px;
+    height: 30px;
+    width: 35%;
+    margin-top: 60px;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.btn:hover {
+background-color: transparent;
+color: #FFF;
+}
+
+.brightOrange {
+    background-color: var(--brightOrange);
+    height: 50%;
+    margin-top: 25%;
+    border-radius: 10px 0 0 10px;
+}
+
+.darkCyan {
+    background-color: var(--darkCyan);
+    height: 50%;
+    margin-top: 25%;
+  
+}
+
+.veryDarkCyan {
+    background-color: var(--veryDarkCyan);
+    height: 50%;
+    margin-top: 25%;
+    border-radius: 0 10px 10px 0;
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .card1 p,
+    .card2 p,
+    .card3 p {
+        margin-bottom: 10px;
+    }
+    
+}
